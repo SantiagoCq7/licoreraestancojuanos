@@ -1,0 +1,11 @@
+{
+    "editor.cursorBlinking": "expand",
+    "vscode-pets.petSize": "medium",
+    "vscode-pets.petType": "fox",
+    "vscode-pets.position": "explorer",
+    "vscode-pets.theme": "none",
+    "vscode-pets.throwBallWithMouse": true,
+    "vscode-pets.disableEffects": false,
+    "typescript.updateImportsOnFileMove.enabled": "prompt",
+    "vscode-pets.petColor": "akita"
+}
