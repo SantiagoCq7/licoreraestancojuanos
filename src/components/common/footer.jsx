@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -9,13 +11,25 @@ function Footer() {
       <h2 className="text-2xl font-bold">
         ESTANCO JUANO´S
         <br />
-        <span className="text-sm font-light">Distribuidora - Licorera</span>
+        <span className="text-sm font-light">Distribuidora & Licorera</span>
       </h2>
       <div className="flex space-x-4">
-        <a href="#"><img src="/icons/youtube.svg" alt="YouTube" className="w-6 h-6" /></a>
-        <a href="#"><img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" /></a>
-        <a href="#"><img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" /></a>
-        <a href="#"><img src="/icons/tiktok.svg" alt="TikTok" className="w-6 h-6" /></a>
+        {/* Logos */}
+        <a href="https://www.instagram.com/estanco_juanos_yd?igsh=ZXlua3phZTZrYjFo"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+          <FaInstagram alt="Instagram" className="w-8 h-8" /></a>
+        <a href="https://www.facebook.com/p/Estanco-Juanos-100076203282400/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        >
+          <FaFacebook alt="Facebook" className="w-8 h-8" /></a>
+        <a href="https://wa.me/573106286887?text=Hola%20quiero%20hacer%20un%20pedido"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+          <FaWhatsapp alt="WhatsaApp" className="w-8 h-8" /></a>
       </div>
     </div>
 
@@ -23,7 +37,7 @@ function Footer() {
     <div>
       <h3 className="font-semibold mb-2">Conoce más</h3>
       <ul className="space-y-1 underline text-sm">
-        <li><a href="#">Quienes Somos</a></li>
+        <li><Link to="/about">Quienes Somos</Link></li>
         <li><a href="#">porductos para tu negocio</a></li>
         <li><a href="#">Servicios</a></li>
 
@@ -34,11 +48,9 @@ function Footer() {
     <div>
       <h3 className="font-semibold mb-2">Atención al cliente</h3>
       <ul className="space-y-1 text-sm">
-        <li><a href="#"><strong> Whatsapp</strong></a></li>
-        <li><a href="#">&#9990; 3002323060</a></li>
+        <li><a href="https://wa.me/573106286887?text=Hola%20quiero%20hacer%20un%20pedido"><strong> Whatsapp</strong></a></li>
+        <li><a href="tel:+573106286887">&#9990;3106286887</a></li>
         <li><a href="mailto:pqrs@dislicores.com">✉️ estancojuanos@gmail.com</a></li>
-        <li><a href="#">Localizar store</a></li>
-        <li><a href="#">Centro de ayuda</a></li>
       </ul>
     </div>
     </div>
