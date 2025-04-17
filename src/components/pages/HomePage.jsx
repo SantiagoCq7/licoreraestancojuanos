@@ -1,11 +1,9 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import Header from "../layout/Header";
 import Footer from "../common/footer";
-import ProductList from "../products/ProductList"; // 👈 lo nuevo
 import bghomepage from "../../assets/images/bg-homepage.png";
 
-export default function HomePage({ addToCart }) { // 👈 recibimos la prop
+export default function HomePage() { // 👈 recibimos la prop
   return (
     <div className="min-h-screen bg-black text-white font-sans">
 
@@ -30,12 +28,6 @@ export default function HomePage({ addToCart }) { // 👈 recibimos la prop
           </button>
         </motion.div>
       </header>
-
-      {/* Product List Section 👇 */}
-      <section className="py-12 px-4 md:px-12">
-        <ProductList addToCart={addToCart} />
-      </section>
-
       {/* Footer */}
       <Footer />
     </div>
