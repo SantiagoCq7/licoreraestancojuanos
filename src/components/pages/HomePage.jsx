@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Footer from "../common/footer";
 import bghomepage from "../../assets/images/bg-homepage.png";
 
-export default function HomePage() { // 👈 recibimos la prop
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
 
