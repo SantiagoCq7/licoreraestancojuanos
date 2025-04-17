@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Navbar from '../common/navbar';
 import Footer from '../common/footer';
 import EstancoPhoto from '../../assets/images/EstancoPhoto.jpg';
 import Repartidor from '../../assets/images/Repartidor.jpg';
@@ -9,8 +8,6 @@ import Repartidor from '../../assets/images/Repartidor.jpg';
 const Nosotros = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
-        {/* Navbar */}
-        <Navbar />
     <section className="bg-black text-white px-6 py-12">
       <div className="max-w-6xl mx-auto">
         {/* ¿QUIÉNES SOMOS? */}
